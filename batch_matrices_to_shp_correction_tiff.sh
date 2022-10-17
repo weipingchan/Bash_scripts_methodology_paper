@@ -18,5 +18,5 @@ module purge
 #module load centos7/0.0.1-fasrc01
 module load matlab/R2018b-fasrc01
 
-cd $LIB_DIR
+cd $MATLAB_CODE_LIBRARY
 matlab -nodisplay -nosplash -nodesktop -r "generateTiffManualCorrection('$SPP_MATRICES_REMASK_DIR','$MATLAB_CODE_LIBRARY','$SPP_TIFF_REMASK_DIR'); exit"
